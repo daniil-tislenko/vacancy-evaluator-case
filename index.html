@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2ec">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Vacancy Evaluator — личный проект по созданию системы поиска и оценки вакансий на базе LLM: продуктовые решения, проверка качества и разработка с AI-инструментами.">
+  <title>Vacancy Evaluator — продуктовый кейс</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Навигация">
+      <a class="brand" href="#top" aria-label="Vacancy Evaluator — к началу страницы">
+        <img src="assets/favicon.svg" width="36" height="36" alt="">
+        <span>Vacancy <span class="brand-thin">Evaluator</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#challenge">Задача</a>
+        <a href="#decisions">Решения</a>
+        <a href="#product">Интерфейс</a>
+        <a href="#results">Проверки</a>
+        <a href="#technology">Технологии</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <a class="nav-contact-mobile" href="#contacts">Контакты</a>
+      <a class="nav-end" href="#product">Посмотреть интерфейс <span aria-hidden="true">↓</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-orb hero-orb-a" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-b" aria-hidden="true"></div>
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Личный продуктовый кейс <span class="eyebrow-divider">/</span> 2026</p>
+          <h1 id="hero-title">Vacancy<br><span>Evaluator</span><span class="hero-period">.</span></h1>
+          <p class="hero-statement">От поиска вакансий — <em>к обоснованному выбору.</em></p>
+          <p class="hero-lead">Vacancy Evaluator — локальная AI-система, которая собирает вакансии, сопоставляет их требования с подтверждённым опытом и помогает решить, на какие позиции стоит откликаться, какие пропустить и что необходимо уточнить.</p>
+          <p class="hero-author"><strong>Даниил Тисленко</strong><span aria-hidden="true">·</span><a href="https://t.me/Dan_Tisl" target="_blank" rel="noopener noreferrer">Написать в Telegram ↗</a></p>
+           <div class="role-line"><span class="small-dot" aria-hidden="true"></span><p><strong>Моя роль</strong> — концепция продукта, методология, архитектурные решения, организация разработки с помощью AI-инструментов, проверка качества и результатов.</p></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#product">Реальный интерфейс <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="#decisions">Ключевые решения <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-showcase">
+          <div class="product-frame">
+            <div class="frame-top"><span class="lights"><i></i><i></i><i></i></span><span>Vacancy Evaluator / рабочий интерфейс</span><span class="frame-indicator">LOCAL</span></div>
+            <button class="hero-shot zoomable" type="button" data-zoom="assets/overview.webp" data-title="Обзор вакансий — реальные данные, названия компаний обезличены" aria-label="Увеличить реальный экран списка вакансий">
+              <img src="assets/overview.webp" alt="Полный экран приложения: список вакансий, метрики, фильтры, рабочая очередь и рекомендации" width="2047" height="1014" fetchpriority="high">
+              <span class="zoom-hint" aria-hidden="true">↗ Увеличить</span>
+            </button>
+          </div>
+          <div class="screenshot-meta"><span class="live-bullet"></span> Реальный интерфейс Vacancy Evaluator. Названия работодателей обезличены</div>
+        </div>
+      </div>
+      <div class="wrap hero-bottom">
+        <span>ПРОДУКТОВОЕ МЫШЛЕНИЕ</span><span>LLM И ПРОВЕРКА КАЧЕСТВА</span><span>УПРАВЛЕНИЕ РАЗРАБОТКОЙ</span><span>ПРОВЕРКА НА РЕАЛЬНЫХ ДАННЫХ</span>
+      </div>
+    </section>
+
+    <section class="fact-strip wrap" aria-label="Факты о продукте">
+      <div class="fact"><b>2</b><span><strong>Источника вакансий</strong><small>HeadHunter и SuperJob</small></span></div>
+      <div class="fact"><b>4</b><span><strong>Направления оценки</strong><small>Опыт, отбор, карьера, условия</small></span></div>
+      <div class="fact"><b class="fact-symbol">✓</b><span><strong>Рабочий локальный продукт</strong><small>Сохранённые оценки, подборка и учёт откликов</small></span></div>
+    </section>
+
+    <section class="section challenge-section" id="challenge" aria-labelledby="challenge-title">
+      <div class="wrap">
+        <div class="section-grid-heading">
+          <div><p class="section-index">01 / ПРОБЛЕМА И ПОДХОД</p><h2 id="challenge-title">Найти вакансию легко.<br><span>Выбрать подходящую — сложнее.</span></h2></div>
+          <p class="section-intro">Похожие названия должностей могут скрывать разные задачи и зоны ответственности. Чтобы решить, стоит ли откликаться, важно понять <strong>содержание роли, соответствие опыта, условия работы и карьерные возможности.</strong></p>
+        </div>
+        <div class="flow" aria-label="Четыре этапа рабочего процесса">
+          <div class="flow-step"><span>01 / ПОИСК</span><div class="flow-icon" aria-hidden="true">⌕</div><h3>Найти</h3><p>Получить объявления из источников и сохранить их историю.</p></div>
+          <div class="flow-step"><span>02 / ОТБОР</span><div class="flow-icon" aria-hidden="true">≋</div><h3>Отобрать</h3><p>Проверить ограничения и соответствие содержанию роли.</p></div>
+          <div class="flow-step"><span>03 / ОЦЕНКА</span><div class="flow-icon" aria-hidden="true">◇</div><h3>Разобрать</h3><p>Сопоставить требования с подтверждённым опытом и целями.</p></div>
+          <div class="flow-step"><span>04 / РЕШЕНИЕ</span><div class="flow-icon" aria-hidden="true">↗</div><h3>Выбрать</h3><p>Увидеть рекомендацию с аргументами и принять своё решение.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section decisions-section" id="decisions" aria-labelledby="decisions-title">
+      <div class="wrap">
+        <p class="section-index">02 / ПРОДУКТОВЫЕ РЕШЕНИЯ</p>
+        <div class="section-heading-inline"><h2 id="decisions-title">Три решения,<br><span>которые сформировали продукт.</span></h2><p>От определения смысла оценки — к проверке выводов LLM и надёжности реальных запусков.</p></div>
+        <div class="case-list">
+          <article class="case">
+            <div class="case-identity"><span class="case-number">01</span><span class="case-area">МЕТОДОЛОГИЯ</span><h3>Оценивать <em>содержание роли</em>, а не название должности.</h3></div>
+            <div class="case-body">
+              <div class="case-pair">
+                <div class="case-part"><span class="pair-label">ПРОБЛЕМА</span><h4>Похожие роли — разные обязанности</h4><p>Название позиции и отдельные совпадения в требованиях не позволяют оценить, насколько работа подходит кандидату.</p></div>
+                <div class="case-part solution"><span class="pair-label">РЕШЕНИЕ</span><h4>Четыре самостоятельных критерия</h4><p>Разделил профессиональное соответствие, доступность для рекрутера, карьерную ценность и условия работы.</p></div>
+              </div>
+              <p class="case-consequence"><span aria-hidden="true">↳</span> Итоговая рекомендация учитывает <strong>разные причины «да», «нет» и «нужно уточнить».</strong></p>
+            </div>
+          </article>
+          <article class="case">
+            <div class="case-identity"><span class="case-number">02</span><span class="case-area">LLM / КАЧЕСТВО</span><h3>От убедительного ответа LLM — <em>к проверяемому выводу.</em></h3></div>
+            <div class="case-body">
+              <div class="case-pair">
+                <div class="case-part"><span class="pair-label">ПРОБЛЕМА</span><h4>Убедительный текст не равен факту</h4><p>Модель может преувеличить опыт, неверно истолковать требования или сослаться на неподходящее доказательство.</p></div>
+                <div class="case-part solution"><span class="pair-label">РЕШЕНИЕ</span><h4>Структура, ссылки, проверки</h4><p>Разделил этапы анализа, привязал выводы к фактам опыта и ввёл проверки корректности ответов.</p></div>
+              </div>
+              <p class="case-consequence"><span aria-hidden="true">↳</span> Можно проследить цепочку <strong>«требование → подтверждение → вывод»</strong> и выявить неподтверждённое.</p>
+            </div>
+          </article>
+          <article class="case">
+            <div class="case-identity"><span class="case-number">03</span><span class="case-area">ЭКСПЛУАТАЦИЯ</span><h3>От отдельных успешных запусков — <em>к управляемому процессу.</em></h3></div>
+            <div class="case-body">
+              <div class="case-pair">
+                <div class="case-part"><span class="pair-label">ПРОБЛЕМА</span><h4>Модели отвечают не всегда полностью</h4><p>В ходе обработки вакансий встречались обрывы генерации, ошибки валидации и незавершённые оценки.</p></div>
+                <div class="case-part solution"><span class="pair-label">РЕШЕНИЕ</span><h4>Сохранение и контролируемое восстановление</h4><p>Организовал сохранение результатов этапов, диагностику сбоев, ограниченные повторные вызовы и контролируемое восстановление.</p></div>
+              </div>
+              <p class="case-consequence"><span aria-hidden="true">↳</span> Ошибка обработки не выдаётся за рекомендацию «пропустить»; <strong>успешные вычисления переиспользуются без ненужных повторных вызовов LLM.</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-section" id="product" aria-labelledby="product-title">
+      <div class="wrap">
+        <div class="section-grid-heading"><div><p class="section-index">03 / РЕАЛЬНЫЙ ИНТЕРФЕЙС</p><h2 id="product-title">Что видит <span>пользователь.</span></h2></div><p class="section-intro">Раздел показывает реальные экраны локального приложения и отдельно адаптированный пример проверки доказательств. Названия работодателей обезличены.</p></div>
+        <div class="showcase-grid">
+          <article class="showcase showcase-wide"><button class="screen-button zoomable" type="button" data-zoom="assets/overview.webp" data-title="Обзор — реальные результаты поиска, компании обезличены" aria-label="Увеличить список вакансий"><img src="assets/overview.webp" alt="Полный экран рабочего списка: показатели, фильтры, результаты и пользовательская очередь" loading="lazy" width="2047" height="1014"><span class="image-zoom">↗ Развернуть</span></button><button class="detail-button zoomable" type="button" data-zoom="assets/overview-detail.webp" data-title="Фрагмент интерфейса" aria-label="Увеличить фрагмент экрана"><img src="assets/overview-detail.webp" alt="Фрагмент реального интерфейса" loading="lazy"><span>Фрагмент · увеличить ↗</span></button><div class="showcase-copy"><span>01 / ОБЗОР</span><h3>Вакансии и рабочая очередь</h3><p>Результаты поиска, состояния оценок, предложения системы и личные отметки — в одном месте, но не смешиваются между собой.</p></div></article>
+          <article class="showcase"><button class="screen-button zoomable" type="button" data-zoom="assets/decision.webp" data-title="Карточка вакансии — предложение Evaluator" aria-label="Увеличить экран рекомендации"><img src="assets/decision.webp" alt="Полный экран карточки вакансии с рекомендацией и вопросами для уточнения" loading="lazy" width="2048" height="1014"><span class="image-zoom">↗ Развернуть</span></button><button class="detail-button zoomable" type="button" data-zoom="assets/decision-detail.webp" data-title="Фрагмент интерфейса" aria-label="Увеличить фрагмент экрана"><img src="assets/decision-detail.webp" alt="Фрагмент реального интерфейса" loading="lazy"><span>Фрагмент · увеличить ↗</span></button><div class="showcase-copy"><span>02 / РЕКОМЕНДАЦИЯ</span><h3>Что делать и почему</h3><p>Рекомендация сопровождается аргументами и вопросами, которые стоит проверить до отклика.</p></div></article>
+          <article class="showcase"><button class="screen-button zoomable" type="button" data-zoom="assets/evidence.webp" data-title="Проверка доказательств — требования вакансии и опыт" aria-label="Увеличить экран проверки оснований"><img src="assets/evidence.webp" alt="Экран проверки оснований со списком требований вакансии и их важностью" loading="lazy" width="2047" height="1014"><span class="image-zoom">↗ Развернуть</span></button><div class="evidence-example" aria-label="Адаптированный пример проверки доказательств"><p class="evidence-kicker">КРИТИЧЕСКОЕ ТРЕБОВАНИЕ</p><h4>Планировать и вести проект разработки ПО</h4><p class="evidence-context">План работ и задачи, технические задания, контроль качества и бюджета, старт и сдача проекта.</p><div class="evidence-item"><strong>Прямое подтверждение</strong><p>Кросс-функциональное управление бизнес-, операционными и AI-проектами: дорожная карта, ответственные, сроки, критерии готовности, задачи, приоритеты, риски, препятствия, зависимости, критический путь, подготовка пилотов и запусков.</p></div><div class="evidence-item"><strong>Прямое подтверждение</strong><p>Проект DQ 2.0: определение объёма работ и MVP, подготовка первой дорожной карты, распределение ответственности и сроков, критерии готовности, проектные встречи, управление зависимостями, препятствиями, рисками и критическим путём, калибровки и регламентные изменения, согласование между направлениями, подготовка пилота и запуска.</p></div><div class="evidence-item adjacent"><strong>Смежное подтверждение</strong><p>Опыт кросс-функционального управления проектами смежен с классическим управлением разработкой ПО, но не подтверждает в полном объёме руководство всем циклом разработки, релизами и инженерной поставкой программного продукта.</p></div><div class="evidence-gap"><strong>Оставшийся пробел и неопределённость</strong><p>Подтверждены планирование и ведение кросс-функциональных проектов, включая дорожную карту, сроки, задачи, риски и подготовку пилотов. Не подтверждено самостоятельное руководство разработкой ПО по полному циклу, включая инженерную поставку и релизы. Отсутствие подтверждения не означает отсутствие способности.</p></div><p class="evidence-caption">На основе реального интерфейса Vacancy Evaluator. Представление адаптировано для публикации.</p></div><div class="showcase-copy"><span>03 / ОСНОВАНИЯ</span><h3>Требования и их основания</h3><p>Рядом с реальным экраном — адаптированный пример раскрытого требования: подтверждения и оставшийся пробел.</p></div></article>
+          <article class="showcase showcase-wide showcase-last"><button class="screen-button zoomable" type="button" data-zoom="assets/uncertainty.webp" data-title="Ручная проверка — две допустимые ветки решения" aria-label="Увеличить экран альтернативных решений"><img src="assets/uncertainty.webp" alt="Полный экран карточки с двумя альтернативными выводами Evaluator и требованием ручной проверки" loading="lazy" width="2047" height="1014"><span class="image-zoom">↗ Развернуть</span></button><button class="detail-button zoomable" type="button" data-zoom="assets/uncertainty-detail.webp" data-title="Фрагмент интерфейса" aria-label="Увеличить фрагмент экрана"><img src="assets/uncertainty-detail.webp" alt="Фрагмент реального интерфейса" loading="lazy"><span>Фрагмент · увеличить ↗</span></button><div class="showcase-copy"><span>04 / НЕОПРЕДЕЛЁННОСТЬ</span><h3>Не скрывать спорное решение</h3><p>Если разные допустимые интерпретации опыта ведут к разным действиям, система оставляет решение человеку, а не имитирует уверенность.</p></div></article>
+        </div>
+        <p class="image-footnote">Скриншоты показывают реальный интерфейс и исторические результаты; представление раскрытого требования адаптировано для публикации. нейтральные названия компаний добавлены при подготовке портфолио. Исходные изображения с названиями работодателей не включены в этот пакет.</p>
+      </div>
+    </section>
+
+    <section class="section validation-section" id="results" aria-labelledby="results-title">
+      <div class="wrap">
+        <div class="section-grid-heading"><div><p class="section-index">04 / ПРОВЕРКА НА ПРАКТИКЕ</p><h2 id="results-title">Не просто запускал.<br><span>Проверял гипотезы и ошибки.</span></h2></div><p class="section-intro">Вместо одной красивой «точности AI» — несколько наблюдений, которые реально повлияли на решения о методологии и реализации.</p></div>
+        <div class="validation-grid">
+          <article class="validation-card"><span class="validation-topic">01 / КАЧЕСТВО LLM</span><h3>Корректный формат ещё не означает правильный вывод.</h3><div class="comparison"><div><strong>30/30</strong><span>ответов прошли технические проверки</span></div><div class="comparison-divider">≠</div><div><strong>14/30</strong><span>содержали существенные смысловые ошибки</span></div></div><p>Результат одной экспериментальной конфигурации, не показатель качества текущей версии. <strong>Решение:</strong> не выбирать конфигурацию по технической валидности без отдельной проверки содержательных выводов.</p></article>
+          <article class="validation-card"><span class="validation-topic">02 / СРАВНЕНИЕ ВЕРСИЙ · 100 ВАКАНСИЙ</span><h3>Меньше нерелевантных вакансий — меньше лишних LLM-оценок</h3><div class="comparison"><div><strong>88</strong><span>предыдущая версия: направлены дальше</span></div><div class="comparison-divider">→</div><div><strong>38</strong><span>новая версия: направлены дальше</span></div></div><p><strong>50 дополнительных исключений.</strong> После уточнения критериев новая версия фильтра исключала ещё 50 вакансий, ранее проходивших дальше. Это позволило сократить потенциальную нагрузку на более дорогой этап оценки.</p><p>Предварительная проверка отнесла большинство новых исключений к нецелевым. Пограничные случаи рассматривались отдельно; общая точность фильтра этим экспериментом не измерена. Это историческое сравнение двух версий на одной выборке.</p></article>
+          <article class="validation-card"><span class="validation-topic">03 / РЕАЛЬНОЕ ИСПОЛЬЗОВАНИЕ</span><h3>Проверка потока вакансий выявила и полезный отбор, и сбои.</h3><div class="run-numbers"><div><strong>544</strong><small>прошли первичные ограничения</small></div><div><strong>246</strong><small>допущены к следующему этапу</small></div><div><strong>20</strong><small>ошибок смыслового отбора</small></div></div><p>Запуск HeadHunter 14 октября: ещё 278 вакансий признаны нецелевыми. Из-за 20 ошибок этап отбора <strong>не завершился полностью</strong>. Это один исторический запуск.</p></article>
+        </div>
+        <div class="validation-note"><span class="note-sign" aria-hidden="true">i</span><p><strong>Граница результатов:</strong> приведены разные исследования и один пример E2E, а не единая выборка. Независимая точность карьерных рекомендаций и экономия времени пока не измерены. </p></div>
+      </div>
+    </section>
+
+    <section class="section technologies-section" id="technology" aria-labelledby="technology-title">
+      <div class="wrap tech-layout">
+        <div><p class="section-index">05 / ИНСТРУМЕНТЫ И ТЕХНОЛОГИИ</p><h2 id="technology-title">От критериев —<br><span>к работающему коду.</span></h2><p class="section-intro">Технологии подбирались под задачу: простой проверяемый процесс, сохранение истории и возможность исследовать ошибки на реальных данных.</p></div>
+        <div class="tech-categories">
+          <div class="tech-group"><h3>Приложение и данные</h3><div class="tech-tags"><span><i class="tech-icon py">Py</i> Python</span><span><i class="tech-icon db">DB</i> SQLite</span><span><i class="tech-icon js">JS</i> JavaScript</span><span><i class="tech-icon react">⚛</i> React</span><span><i class="tech-icon vite">V</i> Vite</span></div></div>
+          <div class="tech-group"><h3>LLM и интеграции</h3><div class="tech-tags"><span><i class="tech-icon open">◎</i> OpenRouter</span><span><i class="tech-icon ai">AI</i> LLM API</span><span><i class="tech-icon deep">D</i> DeepSeek</span><span><i class="tech-icon code">{ }</i> JSON Schema</span><span><i class="tech-icon api">↗</i> REST API</span></div></div>
+          <div class="tech-group"><h3>AI-assisted разработка</h3><div class="tech-tags"><span><i class="tech-icon codex">✳</i> Codex</span></div></div><div class="tech-group"><h3>Контроль изменений и качества</h3><div class="tech-tags"><span>Git / GitHub</span><span>Автоматические тесты и CI</span></div></div><div class="tech-group"><h3>Источники вакансий</h3><div class="tech-tags"><span>HeadHunter</span><span>SuperJob</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey" aria-labelledby="journey-title">
+      <div class="wrap"><p class="section-index">06 / ИСТОРИЯ ПРОЕКТА</p><h2 id="journey-title">От личной задачи <span>к рабочему продукту.</span></h2>
+        <div class="timeline">
+          <div class="timeline-stage"><span class="timeline-date">АВГУСТ — СЕНТЯБРЬ</span><h3>Постановка задачи</h3><p>Критерии оценки, профиль фактов и первые контрольные примеры.</p></div>
+          <div class="timeline-stage"><span class="timeline-date">СЕНТЯБРЬ</span><h3>Первый процесс</h3><p>Evaluator, API источников, фильтры, SQLite и тесты.</p></div>
+          <div class="timeline-stage"><span class="timeline-date">ОКТЯБРЬ</span><h3>Проверяемая оценка</h3><p>Компонентный Evaluator v2, сравнения моделей и анализ ошибок.</p></div>
+          <div class="timeline-stage"><span class="timeline-date">НОЯБРЬ</span><h3>Локальный продукт</h3><p>Рабочий интерфейс, восстановление результатов, развитие оценщика v2.</p></div>
+        </div>
+        <div class="ownership"><div class="ownership-mark">✳</div><div><h3>Как велась разработка</h3><p>Я формулировал требования, управлял приоритетами, принимал архитектурные и продуктовые решения, проверял результаты экспериментов и изменения кода. Реализация велась с помощью <strong>Codex и других AI-инструментов</strong> с ревью и автоматическими проверками. Код и изменения проверялись через ревью, автоматические тесты и реальные запуски.</p></div></div>
+      </div>
+    </section>
+  <section class="section contact-section" id="contacts" aria-labelledby="contacts-title"><div class="wrap contact-layout"><div><p class="section-index">КОНТАКТЫ</p><h2 id="contacts-title">Даниил Тисленко</h2><p>Project Management · Business Operations · AI/LLM Workflows</p></div><div class="contact-links"><a href="https://t.me/Dan_Tisl" target="_blank" rel="noopener noreferrer">Telegram ↗</a><a href="https://www.linkedin.com/in/%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8%D0%BB-%D1%82%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE-1090001b0/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://spb.hh.ru/resume/7a12b406ff111500c10039ed1f3956776a5561" target="_blank" rel="noopener noreferrer">HeadHunter ↗</a><a href="https://github.com/daniil-tislenko" target="_blank" rel="noopener noreferrer">GitHub ↗</a><small>Доступ к резюме на HeadHunter зависит от настроек видимости и авторизации.</small></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><div><strong>Vacancy Evaluator.</strong></div><p>Даниил Тисленко · Vacancy Evaluator · 2026</p><a href="https://github.com/daniil-tislenko" target="_blank" rel="noopener noreferrer">Профиль автора ↗</a><a href="#top">Наверх ↑</a></div></footer>
+
+  <dialog class="lightbox" aria-label="Увеличенный скриншот продукта" id="lightbox"><div class="lightbox-inner"><div class="lightbox-toolbar"><span id="lightbox-title">Экран приложения</span><div><a id="lightbox-open" href="assets/overview.webp" target="_blank" rel="noopener">Открыть в полном размере ↗</a><button id="lightbox-close" type="button" aria-label="Закрыть изображение">✕</button></div></div><img id="lightbox-image" alt=""></div></dialog>
+</body>
+</html>
