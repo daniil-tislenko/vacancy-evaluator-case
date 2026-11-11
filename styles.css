@@ -57,3 +57,64 @@
 
 .showcase-grid{align-items:start}
 
+
+
+/* Product tour: consistent full-width steps instead of uneven side-by-side cards. */
+.product-tour{display:grid;gap:22px}
+.tour-card{background:#fff;border:1px solid #dce3e8;border-radius:20px;overflow:hidden;box-shadow:0 10px 26px #1b3c5908;min-width:0}
+.tour-card-header{display:grid;grid-template-columns:94px minmax(0,1fr) minmax(260px,.95fr);align-items:center;gap:22px;padding:26px 30px;border-bottom:1px solid #e5eaf0}
+.tour-ordinal{display:flex;flex-direction:column;gap:4px;padding-right:20px;border-right:1px solid #e5eaf0}
+.tour-ordinal strong{font-size:33px;line-height:1;font-weight:780;letter-spacing:-.065em;color:#426e98}
+.tour-ordinal span,.tour-eyebrow{font-size:10px;font-weight:830;letter-spacing:.1em;color:#507498}
+.tour-card-header h3{margin:0;font-size:26px;line-height:1.18;letter-spacing:-.035em;color:#1b3049}
+.tour-card-header p{margin:0;font-size:14px;line-height:1.65;color:#536b80}
+.tour-media{background:#eef2f3;padding:26px 32px;display:flex;justify-content:center;min-width:0}
+.tour-visual{display:block;position:relative;max-width:1090px;width:100%;border:1px solid #d4dee2;border-radius:10px;padding:0;overflow:hidden;background:white;cursor:zoom-in;box-shadow:0 8px 22px #253c4a12}
+.tour-visual img{display:block;width:100%;height:auto;transition:transform .25s ease}
+.tour-visual:hover img{transform:scale(1.01)}
+.tour-visual:focus-visible,.tour-original:focus-visible{outline:3px solid #3275aa;outline-offset:3px}
+.tour-zoom-hint{position:absolute;right:14px;bottom:14px;padding:9px 12px;border-radius:8px;border:1px solid #dbe4e9;background:#fffffff2;font-size:12px;font-weight:750;color:#2e597e;box-shadow:0 4px 15px #23384a24;pointer-events:none}
+.tour-card-footer{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px 30px;background:#fff}
+.tour-card-footer>span{color:#64778a;font-size:12px;line-height:1.55}
+.tour-original{border:0;padding:6px 0;background:transparent;color:#285d90;font-size:13px;font-weight:760;cursor:zoom-in;text-align:right;white-space:nowrap}
+.tour-original:hover{text-decoration:underline;text-underline-offset:3px}
+.tour-media-evidence{background:#f0f3ef;padding:24px 32px}
+.tour-evidence{max-width:1090px;width:100%;background:#fff;border:1px solid #d7e2db;border-radius:11px;padding:24px;box-shadow:0 7px 20px #213c2f0b}
+.tour-requirement{border-bottom:1px solid #e3e9e4;padding-bottom:18px;margin-bottom:18px}
+.tour-eyebrow{color:#456f5b}
+.tour-requirement h4{font-size:21px;letter-spacing:-.03em;line-height:1.27;margin:9px 0 8px;color:#263e34}
+.tour-requirement p{margin:0;color:#52685b;font-size:13.5px;line-height:1.55}
+.tour-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tour-evidence-box{min-width:0;border:1px solid #dce6de;border-left:4px solid #6d9979;border-radius:9px;background:#f4f8f4;padding:17px 18px}
+.tour-evidence-box.adjacent{background:#faf7ed;border-color:#e9dfbd;border-left-color:#b39b56}
+.tour-evidence-box.gap{background:#f4f5f4;border-color:#e2e5e3;border-left-color:#9aa7a0}
+.tour-type{display:block;font-size:12px;font-weight:800;line-height:1.45;color:#41694c}
+.tour-evidence-box.adjacent .tour-type{color:#8a7135}
+.tour-evidence-box.gap .tour-type{color:#485d53}
+.tour-evidence-box p{font-size:13px;line-height:1.62;color:#374c3f;margin:9px 0 0}
+@media(max-width:900px){
+  .tour-card-header{grid-template-columns:80px minmax(0,1fr);gap:12px 20px;padding:24px}
+  .tour-card-header p{grid-column:2}
+  .tour-media,.tour-media-evidence{padding:20px 24px}
+  .tour-card-footer{padding:13px 24px}
+}
+@media(max-width:640px){
+  .product-tour{gap:15px}
+  .tour-card{border-radius:15px}
+  .tour-card-header{grid-template-columns:55px minmax(0,1fr);gap:7px 12px;padding:18px}
+  .tour-ordinal{padding-right:10px;gap:5px}
+  .tour-ordinal strong{font-size:26px}
+  .tour-ordinal span{font-size:8px;letter-spacing:.03em;overflow-wrap:anywhere}
+  .tour-card-header h3{font-size:20px}
+  .tour-card-header p{grid-column:1/-1;font-size:13px;margin-top:7px}
+  .tour-media,.tour-media-evidence{padding:12px}
+  .tour-zoom-hint{right:8px;bottom:8px;font-size:10px;padding:6px 8px}
+  .tour-card-footer{display:flex;flex-wrap:wrap;gap:5px;padding:12px 17px}
+  .tour-card-footer>span{font-size:11px}
+  .tour-original{font-size:12px;white-space:normal;text-align:left}
+  .tour-evidence{padding:14px}
+  .tour-requirement h4{font-size:18px}
+  .tour-evidence-grid{grid-template-columns:1fr;gap:9px}
+  .tour-evidence-box{padding:13px}
+  .tour-evidence-box p{font-size:12.7px}
+}
